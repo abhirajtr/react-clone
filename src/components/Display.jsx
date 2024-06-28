@@ -8,9 +8,7 @@ const Display = () => {
 
     const displayRef = useRef();
     const location = useLocation();
-    // console.log(location);
     const isAlbum = location.pathname.includes("album");
-    // console.log(isAlbum);
     const albumId = isAlbum ? location.pathname.slice(-1) : "";
     console.log(albumId);
     const bgColor = albumsData[Number(albumId)].bgColor;
